@@ -262,6 +262,38 @@ h1 em, h2 em, .serif-em {
   font-size: 0.88rem;
 }
 
+.lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  flex: 0 0 auto;
+  margin-left: 0.15rem;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(6, 53, 68, 0.12);
+  background: rgba(255, 255, 255, 0.55);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+.lang a {
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 0.15s ease;
+}
+.lang a:hover,
+.lang a:focus-visible {
+  color: var(--deep);
+}
+.lang a[aria-current="true"] {
+  color: var(--deep);
+}
+.lang__sep {
+  color: rgba(6, 53, 68, 0.28);
+  font-weight: 500;
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
