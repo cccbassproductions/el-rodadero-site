@@ -64,23 +64,36 @@
 <body>
   <div id="site-header"></div>
   <main id="content">
-    <section class="hero">
-      <figure class="photo photo--hero" data-tone="sea">
-        <div class="photo__fallback"></div>
-        <img src="../photos/home-hero.jpg" alt="Vista al mar Caribe y a las montañas desde un apartamento vacacional en el piso 14 en El Rodadero, Santa Marta">
-        <span class="photo__label">Foto principal · Vista del piso 14 al Caribe, Rodadero y montañas</span>
-      </figure>
-      <div class="hero__shade"></div>
-      <div class="hero__content">
-        <p class="eyebrow">Santa Marta, El Rodadero, vista al mar | Capacidad 5</p>
-        <h1>Luz sobre el agua de Santa Marta. <em>El Rodadero</em>, hogar en el piso 14.</h1>
-        <p class="lede">Quédate en el piso 14 con vistas al mar Caribe, a Rodadero y a las montañas. Este apartamento luminoso de 1 habitación recibe hasta 5 huéspedes, con 4 camas y 2 baños con <strong>agua caliente</strong>.</p>
-        <div class="btn-row">
-          <a class="btn btn--light" href="apartment/">Ver el apartamento</a>
-          <a class="btn btn--ghost" href="check-in/">Cómo es el check-in</a>
+    <div class="hero-stage">
+      <section class="hero">
+        <figure class="photo photo--hero" data-tone="sea">
+          <div class="photo__fallback"></div>
+          <img src="../photos/home-hero.jpg" alt="Vista al mar Caribe y a las montañas desde un apartamento vacacional en el piso 14 en El Rodadero, Santa Marta">
+          <span class="photo__label">Foto principal · Vista del piso 14 al Caribe, Rodadero y montañas</span>
+        </figure>
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Santa Marta, El Rodadero, vista al mar | Capacidad 5</p>
+          <h1>Luz sobre el agua de Santa Marta. <em>El Rodadero</em>, hogar en el piso 14.</h1>
+          <p class="lede">Quédate en el piso 14 con vistas al mar Caribe, a Rodadero y a las montañas. Este apartamento luminoso de 1 habitación recibe hasta 5 huéspedes, con 4 camas y 2 baños con <strong>agua caliente</strong>.</p>
+          <div class="btn-row">
+            <a class="btn btn--light" href="apartment/">Ver el apartamento</a>
+            <a class="btn btn--ghost" href="check-in/">Cómo es el check-in</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <aside class="hero-tour" aria-label="Tour en video del apartamento">
+        <div class="hero-tour__media">
+          <iframe
+            src="https://www.youtube.com/embed/NFO4BKE05B4"
+            title="Tour en video del apartamento El Rodadero"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </aside>
+    </div>
 
     <dl class="hero__facts">
       <div><dt>Huéspedes</dt><dd>5</dd></div>

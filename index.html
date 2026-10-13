@@ -64,23 +64,36 @@
 <body>
   <div id="site-header"></div>
   <main id="content">
-    <section class="hero">
-      <figure class="photo photo--hero" data-tone="sea">
-        <div class="photo__fallback"></div>
-        <img src="photos/home-hero.jpg" alt="Caribbean Sea and mountain view from a 14th-floor El Rodadero Santa Marta vacation rental apartment">
-        <span class="photo__label">Hero photo · 14th-floor view of the Caribbean, Rodadero, and mountains</span>
-      </figure>
-      <div class="hero__shade"></div>
-      <div class="hero__content">
-        <p class="eyebrow">Santa Marta, El Rodadero, Beach-View | Sleeps 5</p>
-        <h1>Light over the Santa Marta water. <em>El Rodadero</em>, home on the 14th floor.</h1>
-        <p class="lede">Stay on the 14th floor with Caribbean Sea, Rodadero, and mountain views. This bright 1-bedroom apartment sleeps up to 5 guests with 4 beds and 2 bathrooms with <strong>hot water</strong>.</p>
-        <div class="btn-row">
-          <a class="btn btn--light" href="apartment/">See the apartment</a>
-          <a class="btn btn--ghost" href="check-in/">How check-in works</a>
+    <div class="hero-stage">
+      <section class="hero">
+        <figure class="photo photo--hero" data-tone="sea">
+          <div class="photo__fallback"></div>
+          <img src="photos/home-hero.jpg" alt="Caribbean Sea and mountain view from a 14th-floor El Rodadero Santa Marta vacation rental apartment">
+          <span class="photo__label">Hero photo · 14th-floor view of the Caribbean, Rodadero, and mountains</span>
+        </figure>
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Santa Marta, El Rodadero, Beach-View | Sleeps 5</p>
+          <h1>Light over the Santa Marta water. <em>El Rodadero</em>, home on the 14th floor.</h1>
+          <p class="lede">Stay on the 14th floor with Caribbean Sea, Rodadero, and mountain views. This bright 1-bedroom apartment sleeps up to 5 guests with 4 beds and 2 bathrooms with <strong>hot water</strong>.</p>
+          <div class="btn-row">
+            <a class="btn btn--light" href="apartment/">See the apartment</a>
+            <a class="btn btn--ghost" href="check-in/">How check-in works</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <aside class="hero-tour" aria-label="Apartment video tour">
+        <div class="hero-tour__media">
+          <iframe
+            src="https://www.youtube.com/embed/h6CsDYJhbWg"
+            title="El Rodadero apartment video tour"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </aside>
+    </div>
 
     <dl class="hero__facts">
       <div><dt>Sleeps</dt><dd>5</dd></div>
