@@ -1281,6 +1281,10 @@ section { padding: 3.6rem 0; }
 }
 .footer a { color: white; text-decoration: none; }
 .footer a:hover { color: var(--mango); }
+.footer .btn--light,
+.footer .btn--light:hover {
+  color: var(--deep);
+}
 .footer h2 {
   color: white;
   font-size: clamp(1.85rem, 3.6vw, 2.7rem);
