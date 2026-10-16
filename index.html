@@ -27,10 +27,25 @@
   {
     "@context": "https://schema.org",
     "@type": "VacationRental",
+    "additionalType": "Apartment",
+    "identifier": "maravista945-el-rodadero",
     "name": "El Rodadero Beach-View Apartment",
     "description": "Beach-view vacation rental apartment in El Rodadero, Santa Marta, Colombia. Sleeps 5 on the 14th floor, two blocks from Rodadero Beach.",
-    "url": "/",
-    "image": "/photos/home-hero.jpg",
+    "url": "https://www.maravista945.com/",
+    "checkoutTime": "11:00:00-05:00",
+    "knowsLanguage": ["en", "es"],
+    "image": [
+      "https://www.maravista945.com/photos/bedroom.jpg",
+      "https://www.maravista945.com/photos/bathroom.jpg",
+      "https://www.maravista945.com/photos/living-room.jpg",
+      "https://www.maravista945.com/photos/kitchen.jpg",
+      "https://www.maravista945.com/photos/home-hero.jpg",
+      "https://www.maravista945.com/photos/view.jpg",
+      "https://www.maravista945.com/photos/pool.jpg",
+      "https://www.maravista945.com/photos/jacuzzi.jpg",
+      "https://www.maravista945.com/photos/rooftop.jpg",
+      "https://www.maravista945.com/photos/workspace.jpg"
+    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Santa Marta",
@@ -39,21 +54,48 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "addressCountry": "CO"
+      "latitude": 11.20145,
+      "longitude": -74.22812
     },
-    "numberOfBedrooms": 1,
-    "occupancy": {
-      "@type": "QuantitativeValue",
-      "maxValue": 5
-    },
-    "amenityFeature": [
-      { "@type": "LocationFeatureSpecification", "name": "Air conditioning" },
-      { "@type": "LocationFeatureSpecification", "name": "high-speed wifi" },
-      { "@type": "LocationFeatureSpecification", "name": "Rooftop pool" },
-      { "@type": "LocationFeatureSpecification", "name": "Jacuzzi" },
-      { "@type": "LocationFeatureSpecification", "name": "Rooftop restaurant" },
-      { "@type": "LocationFeatureSpecification", "name": "Free parking" }
-    ]
+    "latitude": 11.20145,
+    "longitude": -74.22812,
+    "containsPlace": {
+      "@type": "Accommodation",
+      "additionalType": "EntirePlace",
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 2,
+      "numberOfRooms": 3,
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "value": 5
+      },
+      "bed": [
+        { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "Double" },
+        { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "Single" },
+        { "@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "Single" }
+      ],
+      "petsAllowed": true,
+      "smokingAllowed": false,
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "ac", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "wifi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "pool", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "hotTub", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "kitchen", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "microwave", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "ovenStove", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "tv", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "washerDryer", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "beachAccess", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "elevator", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "petsAllowed", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "smokingAllowed", "value": false },
+        { "@type": "LocationFeatureSpecification", "name": "selfCheckinCheckout", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "internetType", "value": "Free" },
+        { "@type": "LocationFeatureSpecification", "name": "parkingType", "value": "Free" },
+        { "@type": "LocationFeatureSpecification", "name": "poolType", "value": "Outdoor" }
+      ]
+    }
   }
   </script>
   <link rel="icon" href="favicon.svg">
