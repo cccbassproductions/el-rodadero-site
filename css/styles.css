@@ -268,7 +268,7 @@ h1 em, h2 em, .serif-em {
   gap: 0.28rem;
   flex: 0 0 auto;
   margin-left: 0.15rem;
-  padding: 0.28rem 0.55rem;
+  padding: 0.35rem 0.7rem;
   border-radius: 999px;
   border: 1px solid rgba(6, 53, 68, 0.12);
   background: rgba(255, 255, 255, 0.55);
@@ -276,22 +276,19 @@ h1 em, h2 em, .serif-em {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1;
+  white-space: nowrap;
 }
 .lang a {
   text-decoration: none;
-  color: var(--muted);
+  color: var(--deep);
   transition: color 0.15s ease;
 }
 .lang a:hover,
 .lang a:focus-visible {
-  color: var(--deep);
+  color: var(--lagoon);
 }
-.lang a[aria-current="true"] {
-  color: var(--deep);
-}
-.lang__sep {
-  color: rgba(6, 53, 68, 0.28);
-  font-weight: 500;
+.lang--menu {
+  display: none;
 }
 
 /* Buttons */
@@ -1372,6 +1369,16 @@ section { padding: 3.6rem 0; }
 @media (max-width: 860px) {
   .nav__links { display: none; }
   .nav__toggle { display: inline-flex; align-items: center; justify-content: center; }
+
+  .lang--menu {
+    display: inline-flex;
+    margin: 0.35rem 0 0.85rem;
+    padding: 0.55rem 0.95rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    border-color: rgba(13, 124, 143, 0.28);
+    background: rgba(13, 124, 143, 0.1);
+  }
 
   .menu {
     display: none;

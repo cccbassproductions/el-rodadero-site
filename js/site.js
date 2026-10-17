@@ -170,12 +170,18 @@
     return '<a href="' + href + '"' + classAttr + attr + ">" + label + "</a>";
   }
 
-  function langSwitch() {
+  function langSwitch(extraClass) {
+    var classes = "lang" + (extraClass ? " " + extraClass : "");
+    if (isEs) {
+      return (
+        '<nav class="' + classes + '" aria-label="' + copy.langLabel + '">' +
+          '<a href="' + pageUrlForLocale("en") + '" hreflang="en" lang="en">ENGLISH</a>' +
+        "</nav>"
+      );
+    }
     return (
-      '<nav class="lang" aria-label="' + copy.langLabel + '">' +
-        '<a href="' + pageUrlForLocale("en") + '" hreflang="en" lang="en"' + (!isEs ? ' aria-current="true"' : "") + ">EN</a>" +
-        '<span class="lang__sep" aria-hidden="true">/</span>' +
-        '<a href="' + pageUrlForLocale("es") + '" hreflang="es" lang="es"' + (isEs ? ' aria-current="true"' : "") + ">ES</a>" +
+      '<nav class="' + classes + '" aria-label="' + copy.langLabel + '">' +
+        '<a href="' + pageUrlForLocale("es") + '" hreflang="es" lang="es">ESPAÑOL</a>' +
       "</nav>"
     );
   }
@@ -202,7 +208,7 @@
     var menuEl = document.createElement("div");
     menuEl.className = "menu";
     menuEl.id = "site-menu";
-    menuEl.innerHTML = mobile;
+    menuEl.innerHTML = langSwitch("lang--menu") + mobile;
     document.body.appendChild(menuEl);
   }
 
