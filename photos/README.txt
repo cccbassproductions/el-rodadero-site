@@ -17,7 +17,10 @@ Also used:
 living-room.jpg
 bedroom.jpg
 kitchen.jpg
+kitchen-coffee.jpg     — cabinet with coffee maker and blender
+kitchen-cups.jpg       — cabinet with bowls, glasses, and mugs
 bathroom.jpg           — laundry / bath utility area
+bathroom-vanity.jpg    — toilet, sink, and towels
 pool.jpg
 jacuzzi.jpg
 rooftop.jpg
